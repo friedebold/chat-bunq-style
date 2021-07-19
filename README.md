@@ -6,6 +6,8 @@ Due to time constraints and API limitations the App does NOT:
 
 - handle erros regarding network stability gracefully
 
+- cache chats
+
 - load more than the last 100 messages for a chat
 
 - show senderName in group chats
