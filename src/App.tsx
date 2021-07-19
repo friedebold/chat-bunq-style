@@ -12,12 +12,6 @@ const App: React.FC = () => {
 
   if (!activeUser) return <Login {...{ setActiveUser }} {...{ allUsers }} {...{ setAllUsers }} />
   return <ResponsiveAppContainer  {...{ activeUser }} {...{ allUsers }} />
-  /* 
-   {...{ conversations }}
-   {...{ selectedConversation }}
-   {...{ setSelectedConversation }}
-   {...{ refreshConversations }}
-   {...{ isConversationsRefreshing }} */
 }
 
 export default App;

@@ -28,8 +28,6 @@ const Chat: React.FC<Props> = ({ activeUser, selectedConversation, setSelectedCo
   
   const currentChat: ChatConversation | undefined = conversations.find(e => e.conversation.conversationId === conversationId)
 
-  /*  console.log(currentChat?.conversation.conversationId) */
-
   return !currentChat ? <div className='flex center'><p>Loading...</p></div>
     : !isDetailsExpanded
       ? <ChatScreen

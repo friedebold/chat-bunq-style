@@ -40,8 +40,6 @@ const ResponsiveAppContainer: React.FC<Props> = ({ activeUser, allUsers }) => {
     }
   }, [activeUser])
 
-  /* console.log(selectedConversation) */
-
   const refreshConversations = () => {
     if (activeUser) {
       setIsConversationsRefreshing(true)

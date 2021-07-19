@@ -10,7 +10,6 @@ import './conversations.css';
 interface Props {
   activeUser: User
   allUsers: User[]
-  /*   setIsCreatingNewMessage: React.Dispatch<React.SetStateAction<boolean>> */
   conversations: ChatConversation[]
   selectedConversation: SelectedConversation
   setSelectedConversation: React.Dispatch<React.SetStateAction<SelectedConversation | null>>
