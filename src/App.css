@@ -1,8 +1,29 @@
-.App {
+.app {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
+.selectConversation-txt {
+  opacity: 0.2;
+}
+
+.rainbow-background {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.rainbow-tile {
+  width: calc(100vw / 12);
+  height: 100%
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,3 +57,4 @@
     transform: rotate(360deg);
   }
 }
+ */

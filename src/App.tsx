@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { User } from './apis/model';
 import './App.css';
+import Login from './Login';
+import ResponsiveAppContainer from './ResponsiveAppContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+
+  const [allUsers, setAllUsers] = useState<User[]>([])
+
+  const [activeUser, setActiveUser] = useState<User | null>(null)
+
+  if (!activeUser) return <Login {...{ setActiveUser }} {...{ allUsers }} {...{ setAllUsers }} />
+  return <ResponsiveAppContainer  {...{ activeUser }} {...{ allUsers }} />
+  /* 
+   {...{ conversations }}
+   {...{ selectedConversation }}
+   {...{ setSelectedConversation }}
+   {...{ refreshConversations }}
+   {...{ isConversationsRefreshing }} */
 }
 
 export default App;

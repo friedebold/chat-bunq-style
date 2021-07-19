@@ -1,0 +1,10 @@
+
+
+.refresh-btn {
+  background-color: white;
+  position: absolute;
+  height: var(--nav-btn-height);
+  border-radius: calc(var(--nav-btn-height)/2);
+  bottom: calc(var(--margin)/2);
+  left: calc(var(--margin)/2)
+}

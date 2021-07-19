@@ -1,0 +1,16 @@
+header {
+  padding: 0px calc(var(--margin)/2);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-container {
+  background-color: var(--black);
+  border-radius: var(--border-radius);
+  margin: auto;
+  padding: 10px 20px;
+  z-index: 1;
+}

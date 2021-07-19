@@ -1,0 +1,62 @@
+.login {
+  height: 100vh;
+  display: flex;
+  background-color: red;
+}
+
+.logo-img {
+  width: 100px;
+  height: calc(100px * 166/400);
+  position: absolute;
+  top: var(--margin);
+  left: var(--margin)
+}
+
+.login-container {
+  background-color: var(--black);
+  border-radius: var(--border-radius);
+  margin: auto;
+  width: calc(100vw - var(--margin) * 2);
+  max-width: 400px;
+  padding: 10px;
+  transition: all 0.2s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.greeter {
+  opacity: 0;
+  transition: ease-in all 0.2s;
+  text-align: center;
+}
+
+.login-user-wrapper {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.login-user-wrapper.closed {
+  max-height: 0;
+}
+
+.opacity1 {
+  opacity: 1;
+}
+
+.login-user-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: calc(var(--margin)/2);
+}
+
+.login-user-btn {
+  background-color: white;
+  border-radius: var(--border-radius);
+  margin-top: calc(var(--margin)/2);
+}
+
+.login-user-btn:not(:last-child) {
+  margin-right: calc(var(--margin)/2);
+}

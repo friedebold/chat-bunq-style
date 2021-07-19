@@ -1,0 +1,24 @@
+.contact-list {
+  overflow-y: auto;
+  padding-bottom: calc(var(--margin) + var(--nav-btn-height));
+}
+
+.contacts-title {
+  padding: var(--margin);
+  text-align: left;
+}
+
+.group-name-input {
+  font-size: 30px;
+  padding: var(--margin);
+  text-align: center;
+  margin-top: 40%;
+  font-weight: 700;
+  color: white;
+}
+
+.group-name-input::placeholder {
+  background-color: transparent;
+  /* font-size: 40px; */
+  color: rgba(255, 255, 255, 0.498);
+}
